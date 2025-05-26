@@ -3,13 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>archive_b | 博客</title>
+  <title>创建与提交 | 博客</title>
   <meta name="author" content="Sunshine">
+  
+  <meta name="description" content="本地刚创建了一个 Hexo 项目，并用 Git 初始化：
+✅ 第一步：初始化 Git 仓库git init把当前目录变成一个 Git 仓库。
+
+Git 会生成一个 .git 文件夹，用于追踪文件变化。
+
+✅ 第二步：添加远程仓库地址（origin）git remote add origin http">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="创建与提交"/>
   <meta property="og:site_name" content="博客"/>
 
   
@@ -42,73 +49,75 @@
 <body id="body" data-spy="scroll" data-target=".toc">
   <div class="container" id="container">
 	<div class="content">
-	  <div class="page-header">
-  <h1><a class="brand" href="#">博客</a></h1>
-</div>
-
-
+	  <div class="page-header">		
+  <h1><a class="brand" href="/">博客</a><span class="split"></span><span class="title">创建与提交</span><span class="date" id="title-date"><i class="fa fa-clock-o"></i> 2025-05-26</span></h1>
+</div>		
 
 <div class="row page">
+  <!-- cols -->	
+  
+  
+
+  
 	<div class="col-md-12">
-        <input type="text" id="local-search-input" name="q" results="0" placeholder="search notes..." class="st-search-input st-default-search-input form-control" style="margin-bottom:1em"/>
-        <div id="local-search-result"></div>
-		<div class="panel-group" id="notebook">
-			
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<a class="panel-title" data-toggle="collapse" data-parent="#notebook" href="#开发">
-						<i class="fa fa-folder"></i> 开发		  
-				</div>
-				
-					<div id="开发" class="panel-collapse collapse in">
-				
-						<div class="panel-body">
-							<ul class="post">                                
-								
-								    
-								        <li class="post-list-item"><a href="/2025/05/16/开发/第一篇博客/">第一篇博客</a></li>
-								    
-								
-								    
-								
-							</ul>
-						</div>
-					</div>
-			</div>
-			
-			
-			
-			
-			
-			
-			
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<a class="panel-title" data-toggle="collapse" data-parent="#notebook" href="#暖阳">
-						<i class="fa fa-folder"></i> 暖阳		   
-				</div>
-				
-					<div id="暖阳" class="panel-collapse collapse in">
-				
-					    <div class="panel-body">
-						    <ul class="post">
+	  
+
+	  <!-- content -->
+	  <p>本地刚创建了一个 Hexo 项目，并用 Git 初始化：</p>
+<p>✅ 第一步：初始化 Git 仓库<br>git init<br>把当前目录变成一个 Git 仓库。</p>
+<ul>
+<li>Git 会生成一个 .git 文件夹，用于追踪文件变化。</li>
+</ul>
+<p>✅ 第二步：添加远程仓库地址（origin）<br>git remote add origin <a target="_blank" rel="noopener" href="https://github.com/sunshine221/my-blog.git">https://github.com/sunshine221/my-blog.git</a></p>
+<p>✅ 第三步：切换到 main 分支<br>git checkout -b main<br>新建一个分支名为 main，并切换过去</p>
+<ul>
+<li>main 是 GitHub 默认的主分支名称（以前叫 master）</li>
+</ul>
+<p>✅ 第四步：添加所有文件到 Git 暂存区<br>git add .<br>把当前目录下的所有文件添加到 Git 的“待提交列表”</p>
+<p>✅ 第五步：提交修改（保存历史快照）<br>git commit -m “Hexo source code”<br>创建一次提交，内容为 “Hexo source code”，保存当前所有代码的状态</p>
+<p>✅ 第六步：推送到 GitHub 并建立追踪关系<br>git push -u origin main<br>把当前分支 main 的内容推送到远程仓库 origin 上的 main 分支</p>
+<ul>
+<li>-u（或 –set-upstream）表示：让本地 main 分支记住这个远程分支，以后你只需要用 git push 就可以了</li>
+</ul>
+<p>你的 main 分支关联的是 origin&#x2F;main，以后直接用 git push、git pull 就可以了。</p>
+	  
+
+	  <div>
+  		<center>
+		  <div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
 			
 			
-			    
-			                    
-			    
-			                    
-			                    <li class="post-list-item"><a href="/2025/05/16/入门指南/">入门指南</a></li>
-			                    
-			    
-				            </ul>
-				        </div>
-				    </div>
-			</div>
-			
-		</div><!-- accordion -->
-	</div>
+		
+	
+		
+	
+		
+	
+	
+	
+		<li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>prev</a></li>
+	
+	<li><a href="/"><i class="fa fa-archive"></i>Home</a></li>
+	
+		<li class="next disabled"><a>next<i class="fa fa-arrow-circle-o-right"></i></a></li>
+	
+</ul>
 </div>
+
+		</center>
+	  </div>
+	  
+	</div> <!-- col-md-9/col-md-12 -->
+	
+  </div><!-- row -->
 
 	</div>
   </div>
